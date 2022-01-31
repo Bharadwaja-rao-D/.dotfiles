@@ -1,0 +1,5 @@
+#! /bin/bash
+
+sudo apt install build-essential git curl
+sudo snap install nvim --channel=latest/edge --classic
+

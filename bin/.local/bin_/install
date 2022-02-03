@@ -2,4 +2,15 @@
 
 sudo apt install build-essential git curl
 sudo snap install nvim --channel=latest/edge --classic
-
+sudo snap install node
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+sudo apt install i3 nitrogen compton stow
+git config --global user.name "Bharadwaja-rao-D"
+git config --global user.email "cs20btech11012@iith.ac.in"
+sudo apt install clangd pip3
+pip3 install pyright
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+# first move the ssh folder into this computer
+git clone git@github.com:Bharadwaja-rao-D/.dotfiles.git
+stow **

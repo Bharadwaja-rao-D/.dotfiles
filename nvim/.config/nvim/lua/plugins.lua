@@ -32,10 +32,9 @@ return require('packer').startup(function()
 	-- for debugging
 	use 'puremourning/vimspector'
 
-
-	use 'tpope/vim-fugitive'
-
 	use 'sbdchd/neoformat'
+
+	use 'mattn/emmet-vim'
 
 
   end)

@@ -24,4 +24,4 @@ keymap("n", "<leader>pv", ":Lexplore 25<cr>", opts)
 
 keymap("n", "<C-c>", "<Esc>", opts)
 
---keymap("n", "<leader>cp", ":!g++ % -o %:r && ./%:r<input <cr>", opts)
+keymap("i", "<localleader>e", "<C-y>,", {noremap = false, silent = true})

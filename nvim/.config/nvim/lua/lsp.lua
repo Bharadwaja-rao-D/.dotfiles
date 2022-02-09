@@ -53,13 +53,8 @@ require('lspconfig').rust_analyzer.setup {
 	capabilities = capabilities
 }
 
-require('lspconfig').tsserver.setup {
-	capabilities = capabilities
-}
+require('lspconfig').tsserver.setup{}
 
-require('lspconfig').cmake.setup {
-	capabilities = capabilities
-}
 -- some lsp keymapings
 
 vim.cmd "nnoremap <localleader>vd :lua vim.lsp.buf.definition()<cr>"

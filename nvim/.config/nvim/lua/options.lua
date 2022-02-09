@@ -15,6 +15,7 @@ local options = {
 	scrolloff = 8,
 	colorcolumn = "80",
 	updatetime = 200,
+	hlsearch=false,
 
 }
 
@@ -24,7 +25,6 @@ end
 
 vim.cmd "colorscheme gruvbox"
 vim.cmd "set guicursor = "
-vim.cmd "set nohlsearch"
 vim.cmd "let g:netrw_browse_split = 0"
 vim.cmd "let g:netrw_banner = 0"
 vim.cmd "let g:netrw_winsize = 25"

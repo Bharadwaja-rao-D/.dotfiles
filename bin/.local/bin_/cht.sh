@@ -1,6 +1,6 @@
 #! /bin/bash
 
-languages=`echo "c cpp rust typescript cmake bash python"|tr ' ' '\n'`
+languages=`echo "c cpp rust typescript cmake bash python html css javascript"|tr ' ' '\n'`
 
 selected=`printf "$languages" | fzf`
 read -p "query: " query

@@ -1,16 +1,34 @@
 #! /bin/bash
 
-sudo apt install build-essential git curl
+sudo apt install build-essential git curl wget
 sudo snap install nvim --channel=latest/edge --classic
 sudo snap install node
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 sudo apt install i3 nitrogen compton stow
-git config --global user.name "Bharadwaja-rao-D"
-git config --global user.email "cs20btech11012@iith.ac.in"
+echo "enter github username"
+read name
+echo "enter github email"
+read email
+git config --global user.name $name
+git config --global user.email $email
 sudo apt install clangd pip3
 pip3 install pyright
+echo "installed clangd and pyright"
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+mkdir -p ~/.local/bin
+curl -L https://github.com/rust-analyzer/rust-analyzer/releases/latest/download/rust-analyzer-x86_64-unknown-linux-gnu.gz | gunzip -c - > ~/.local/bin/rust-analyzer
+chmod +x ~/.local/bin/rust-analyzer
+echo "installed rust and rust-analyzer"
 # first move the ssh folder into this computer
-git clone git@github.com:Bharadwaja-rao-D/.dotfiles.git
+echo "cloning from $name repo"
+git clone git@github.com:$name/.dotfiles.git
 stow **
+echo "got all .dotfiles"
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+wget https://github.com/tonsky/FiraCode/releases/download/6.2/Fira_Code_v6.2.zip
+mkdir ~/.fonts
+mv Fira_Code_v6.2.zip ~/.fonts
+fc-cache -fv
+echo "installed firacode"

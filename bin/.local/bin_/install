@@ -29,6 +29,6 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 wget https://github.com/tonsky/FiraCode/releases/download/6.2/Fira_Code_v6.2.zip
 mkdir ~/.fonts
-mv Fira_Code_v6.2.zip ~/.fonts
+mv Fira_Code_v6.2.zip ~/.fonts && unzip ~/.fonts/Fira_Code_v6.2.zip
 fc-cache -fv
 echo "installed firacode"

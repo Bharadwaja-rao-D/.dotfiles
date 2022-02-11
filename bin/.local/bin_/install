@@ -23,7 +23,7 @@ echo "installed rust and rust-analyzer"
 # first move the ssh folder into this computer
 echo "cloning from $name repo"
 git clone git@github.com:$name/.dotfiles.git
-stow **
+cd .dotfiles && stow ** && cd ~
 echo "got all .dotfiles"
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install

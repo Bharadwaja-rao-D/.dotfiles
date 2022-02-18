@@ -32,7 +32,8 @@ local function split(inputstr, sep)
 end
 
 local function get_file_name()
-    local name = vim.fn.bufname(0)
+    local name = vim.fn.bufname("%")
+	-- local name = bufname("%")
 
     if not name or name == "" then
         return "(no name)"
@@ -63,10 +64,21 @@ end
 
 local function lsp_info()
 
-    local warnings = vim.lsp.diagnostic.get_count(0, "Warning")
-    local errors = vim.lsp.diagnostic.get_count(0, "Error")
-    local hints = vim.lsp.diagnostic.get_count(0, "Hint")
+    -- local warnings = vim.lsp.diagnostic.get_count(0, "Warning")
+    -- local errors = vim.lsp.diagnostic.get_count(0, "Error")
+    -- local hints = vim.lsp.diagnostic.get_count(0, "Hint")
 
+	  local diagnostics = vim.diagnostic.get(0)
+      local count = { 0, 0, 0, 0 }
+      for _, diagnostic in ipairs(diagnostics) do
+        if vim.startswith(vim.diagnostic.get_namespace(diagnostic.namespace).name, 'vim.lsp') then
+          count[diagnostic.severity] = count[diagnostic.severity] + 1
+        end
+      end
+      local errors = count[vim.diagnostic.severity.ERROR]
+      local warnings = count[vim.diagnostic.severity.WARN]
+      --local info_count = count[vim.diagnostic.severity.INFO]
+      local hints = count[vim.diagnostic.severity.HINT]
 
     return string.format("LSP: H %d W %d E %d", hints, warnings, errors)
 end
@@ -115,7 +127,7 @@ M.set_status = function(line)
 end
 
 vim.api.nvim_exec([[
-augroup YONI_STATUSLINE
+augroup STATUSLINE
     autocmd!
     autocmd BufWritePre * :lua require("new_statusline").on_write()
 augroup END

@@ -199,7 +199,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 
 bindsym $mod+b exec google-chrome
 bindsym $mod+n exec xournal
-bindsym $mod+p exec evince
+bindsym $mod+p exec microsoft-edge
 
 default_border pixel 1
 default_floating_border pixel 0

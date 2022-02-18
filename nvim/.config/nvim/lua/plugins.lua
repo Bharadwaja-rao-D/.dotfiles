@@ -34,7 +34,6 @@ return require('packer').startup(function()
 
 	use 'sbdchd/neoformat'
 
-	use 'mattn/emmet-vim'
-
+	use 'tpope/vim-fugitive'
 
   end)

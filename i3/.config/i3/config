@@ -197,9 +197,9 @@ bindsym Print exec gnome-screenshot -a
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
-bindsym $mod+b exec google-chrome
-bindsym $mod+n exec xournal
+bindsym $mod+b exec brave-browser-beta
 bindsym $mod+p exec microsoft-edge
+bindsym $mod+n exec firefox
 
 default_border pixel 1
 default_floating_border pixel 0

@@ -36,4 +36,8 @@ return require('packer').startup(function()
 
 	use 'tpope/vim-fugitive'
 
+	use 'mattn/emmet-vim'
+
+	use 'lewis6991/gitsigns.nvim'
+
   end)

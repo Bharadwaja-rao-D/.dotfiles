@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
+  ["emmet-vim"] = {
+    loaded = true,
+    path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/emmet-vim",
+    url = "https://github.com/mattn/emmet-vim"
+  },
   gruvbox = {
     loaded = true,
     path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/gruvbox",
@@ -138,6 +143,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/vim-commentary",
     url = "https://github.com/tpope/vim-commentary"
+  },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
   },
   ["vim-vsnip"] = {
     loaded = true,

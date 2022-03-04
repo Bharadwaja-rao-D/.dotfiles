@@ -53,13 +53,9 @@ require('lspconfig').rust_analyzer.setup {
 	capabilities = capabilities
 }
 
-local function config(_config)
-	return vim.tbl_deep_extend("force", {
-		capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities()),
-	}, _config or {})
-end
 
-require("lspconfig").tsserver.setup(config())
+require('lspconfig').tsserver.setup {on_attach = custom_attach, root_dir = vim.loop.cwd }
+
 -- some lsp keymapings
 
 vim.cmd "nnoremap <localleader>vd :lua vim.lsp.buf.definition()<cr>"

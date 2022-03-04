@@ -187,7 +187,6 @@ bindsym $mod+l exec i3lock
 # wallpaper
 exec nitrogen --random ~/Pictures/wallpapers --set-zoom-fill
 # compton
-#exec compton
 exec compton
 
 #for using print screen

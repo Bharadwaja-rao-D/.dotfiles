@@ -8,4 +8,4 @@ require "telescope-config"
 require "treesitter-config"
 vim.cmd "source ~/.config/nvim/lua/vimspector.vim"
 vim.cmd "source ~/.config/nvim/lua/autocmd.vim"
-require('gitsigns').setup()
+--require('gitsigns').setup()

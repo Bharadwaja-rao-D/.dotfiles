@@ -2,7 +2,8 @@
 
 sudo apt install build-essential git curl wget
 sudo snap install nvim --channel=latest/edge --classic
-sudo snap install node
+curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
+sudo apt-get install -y nodejs
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 sudo apt install i3 nitrogen compton stow
@@ -27,9 +28,3 @@ cd .dotfiles && stow ** && cd ~
 echo "got all .dotfiles"
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
-wget https://github.com/tonsky/FiraCode/releases/download/6.2/Fira_Code_v6.2.zip
-mkdir ~/.fonts
-mv Fira_Code_v6.2.zip ~/.fonts && unzip ~/.fonts/Fira_Code_v6.2.zip
-fc-cache -fv
-echo "installed firacode"
-sudo apt install xournal

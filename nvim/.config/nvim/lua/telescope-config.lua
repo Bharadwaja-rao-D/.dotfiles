@@ -2,7 +2,7 @@ require('telescope').setup{
   defaults = {
     -- Default configuration for telescope goes here:
     -- config_key = value,
-	file_ignore_patterns = {"build/", "target/"},
+	file_ignore_patterns = {"build/", "target/", "node_modules"},
   }
 }
 

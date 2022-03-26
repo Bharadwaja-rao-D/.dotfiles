@@ -23,9 +23,10 @@ for option, value in pairs(options) do
 	vim.opt[option] = value
 end
 
-vim.cmd "colorscheme gruvbox"
-vim.cmd "set guicursor = "
+--vim.cmd "set guicursor = "
+vim.cmd([[colorscheme gruvbox]])
 vim.cmd "let g:netrw_browse_split = 0"
 vim.cmd "let g:netrw_banner = 0"
-vim.cmd "let g:netrw_winsize = 25"
+vim.cmd "let g:netrw_winsize = 20"
 vim.cmd"hi SignColumn guibg=none"
+

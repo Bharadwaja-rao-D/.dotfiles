@@ -94,11 +94,6 @@ _G.packer_plugins = {
     path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/gruvbox",
     url = "https://github.com/gruvbox-community/gruvbox"
   },
-  neoformat = {
-    loaded = true,
-    path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/neoformat",
-    url = "https://github.com/sbdchd/neoformat"
-  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -143,11 +138,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/vim-commentary",
     url = "https://github.com/tpope/vim-commentary"
-  },
-  ["vim-fugitive"] = {
-    loaded = true,
-    path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/vim-fugitive",
-    url = "https://github.com/tpope/vim-fugitive"
   },
   ["vim-vsnip"] = {
     loaded = true,

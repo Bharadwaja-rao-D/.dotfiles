@@ -2,7 +2,8 @@ return require('packer').startup(function()
 -- Packer can manage itself
   	use 'wbthomason/packer.nvim'
 
-	use 'gruvbox-community/gruvbox'
+	--use 'gruvbox-community/gruvbox'
+	use "ellisonleao/gruvbox.nvim"
 
 	use 'nvim-lua/plenary.nvim'
 	use 'nvim-lua/popup.nvim'
@@ -32,12 +33,7 @@ return require('packer').startup(function()
 	-- for debugging
 	use 'puremourning/vimspector'
 
-	use 'sbdchd/neoformat'
-
-	use 'tpope/vim-fugitive'
-
 	use 'mattn/emmet-vim'
 
-	use 'lewis6991/gitsigns.nvim'
 
   end)

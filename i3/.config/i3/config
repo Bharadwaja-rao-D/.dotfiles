@@ -193,11 +193,11 @@ exec compton
 bindsym Print exec gnome-screenshot -a
 
 #brightness
-bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec light -A 1 # increase screen brightness
+bindsym XF86MonBrightnessDown exec light -U 1 # decrease screen brightness
 
 bindsym $mod+b exec brave-browser-beta
-bindsym $mod+p exec microsoft-edge
+bindsym $mod+p exec evince
 bindsym $mod+n exec firefox
 
 default_border pixel 1

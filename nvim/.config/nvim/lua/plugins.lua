@@ -2,8 +2,7 @@ return require('packer').startup(function()
 -- Packer can manage itself
   	use 'wbthomason/packer.nvim'
 
-	--use 'gruvbox-community/gruvbox'
-	use "ellisonleao/gruvbox.nvim"
+	use 'gruvbox-community/gruvbox'
 
 	use 'nvim-lua/plenary.nvim'
 	use 'nvim-lua/popup.nvim'

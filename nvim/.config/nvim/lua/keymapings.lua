@@ -5,7 +5,6 @@ local keymap = vim.api.nvim_set_keymap
 --Remap space as leader key
 --keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
-vim.g.maplocalleader = ";"
 
 keymap("n", "<C-j>", "<C-w>w", opts)
 keymap("n", "<C-h>", ":bprev<cr>", opts)
@@ -20,8 +19,8 @@ keymap("n", "Y", "y$", opts)
 keymap("n", "D", "d$", opts)
 keymap("n", "C", "c$", opts)
 
-keymap("n", "<leader>pv", ":Lexplore 25<cr>", opts)
+keymap("n", "<leader>pv", ":Ex <cr>", opts)
 
 keymap("n", "<C-c>", "<Esc>", opts)
 
-keymap("i", "<localleader>e", "<C-y>,", {noremap = false, silent = true})
+keymap("i", "<leader>e", "<C-y>,", {noremap = false, silent = true})

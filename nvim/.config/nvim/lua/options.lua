@@ -2,7 +2,6 @@ local options = {
 	clipboard = "unnamedplus",
 	encoding = "UTF-8",
 	completeopt = {"menuone", "noselect"},
-	mouse = "a",
 	smartcase = true,
 	smartindent = true,
 	swapfile = false,
@@ -24,7 +23,9 @@ for option, value in pairs(options) do
 end
 
 vim.cmd "set guicursor = "
-vim.cmd([[colorscheme gruvbox]])
+vim.cmd "colorscheme gruvbox"
+vim.cmd "set background=dark"
+vim.cmd "let g:gruvbox_contrast_dark = 'hard'"
 vim.cmd "let g:netrw_browse_split = 0"
 vim.cmd "let g:netrw_banner = 0"
 vim.cmd "let g:netrw_winsize = 20"

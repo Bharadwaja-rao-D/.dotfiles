@@ -196,7 +196,7 @@ bindsym Print exec gnome-screenshot -a
 bindsym XF86MonBrightnessUp exec light -A 1 # increase screen brightness
 bindsym XF86MonBrightnessDown exec light -U 1 # decrease screen brightness
 
-bindsym $mod+b exec brave-browser-beta
+bindsym $mod+b exec google-chrome
 bindsym $mod+p exec evince
 bindsym $mod+n exec firefox
 

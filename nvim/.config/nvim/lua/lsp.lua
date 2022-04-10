@@ -58,11 +58,11 @@ require('lspconfig').tsserver.setup {on_attach = custom_attach, root_dir = vim.l
 
 -- some lsp keymapings
 
-vim.cmd "nnoremap <localleader>vd :lua vim.lsp.buf.definition()<cr>"
-vim.cmd "nnoremap <localleader>h :lua vim.lsp.buf.hover()<cr>"
-vim.cmd "nnoremap <localleader>s :lua vim.lsp.buf.signature_help()<cr>"
-vim.cmd "nnoremap <localleader>r :lua vim.lsp.buf.rename()<cr>"
-vim.cmd "nnoremap <localleader>ca :lua vim.lsp.buf.code_action()<cr>"
-vim.cmd "nnoremap <localleader>f :lua vim.lsp.buf.formatting()<cr>"
+vim.cmd "nnoremap <leader>gd :lua vim.lsp.buf.definition()<cr>"
+vim.cmd "nnoremap K :lua vim.lsp.buf.hover()<cr>"
+vim.cmd "nnoremap <leader>rn :lua vim.lsp.buf.rename()<cr>"
+vim.cmd "nnoremap <leader>vca :lua vim.lsp.buf.code_action()<cr>"
+vim.cmd "nnoremap <leader>f :lua vim.lsp.buf.formatting()<cr>"
+vim.cmd "nnoremap <leader>vd :lua vim.diagnostic.open_float()<cr>"
 
 

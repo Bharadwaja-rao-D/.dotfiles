@@ -15,8 +15,10 @@ return require('packer').startup(function()
 	use 'hrsh7th/cmp-nvim-lsp'
 	use 'hrsh7th/cmp-buffer'
 	use 'hrsh7th/nvim-cmp'
-	use 'hrsh7th/cmp-vsnip'
-	use 'hrsh7th/vim-vsnip'
+	use 'L3MON4D3/LuaSnip'
+	use 'saadparwaiz1/cmp_luasnip'
+	use 'onsails/lspkind-nvim'
+	use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
 
 	-- lsp
 
@@ -34,5 +36,8 @@ return require('packer').startup(function()
 
 	use 'mattn/emmet-vim'
 
+	use 'tpope/vim-fugitive'
+
+	use 'sbdchd/neoformat'
 
   end)

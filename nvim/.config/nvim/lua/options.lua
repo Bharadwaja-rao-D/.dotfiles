@@ -31,3 +31,4 @@ vim.cmd "let g:netrw_banner = 0"
 vim.cmd "let g:netrw_winsize = 20"
 vim.cmd"hi SignColumn guibg=none"
 
+-- vim.cmd "highlight [group] guifg=[color] guibg=[color]"

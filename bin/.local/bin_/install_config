@@ -1,6 +1,8 @@
 #! /bin/bash
 
+sudo apt instal zsh
 sudo apt install build-essential git curl wget
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 sudo snap install nvim --channel=latest/edge --classic
 curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
 sudo apt-get install -y nodejs
@@ -21,6 +23,8 @@ mkdir -p ~/.local/bin
 curl -L https://github.com/rust-analyzer/rust-analyzer/releases/latest/download/rust-analyzer-x86_64-unknown-linux-gnu.gz | gunzip -c - > ~/.local/bin/rust-analyzer
 chmod +x ~/.local/bin/rust-analyzer
 echo "installed rust and rust-analyzer"
+wget https://go.dev/dl/go1.18.1.linux-amd64.tar.gz && sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.18.1.linux-amd64.tar.gz
+echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.profile
 # first move the ssh folder into this computer
 echo "cloning from $name repo"
 git clone git@github.com:$name/.dotfiles.git

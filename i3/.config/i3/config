@@ -180,24 +180,25 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status -c ~/.config/i3/i3status.conf
+		tray_output primary
 }
 
 #i3 lock
 bindsym $mod+l exec i3lock
 # wallpaper
-exec nitrogen --random ~/Pictures/wallpapers --set-zoom-fill
+# exec nitrogen --random ~/Pictures/wallpapers --set-zoom-fill
 # compton
-exec compton
+# exec compton
 
 #for using print screen
 bindsym Print exec gnome-screenshot -a
 
 #brightness
-bindsym XF86MonBrightnessUp exec light -A 1 # increase screen brightness
-bindsym XF86MonBrightnessDown exec light -U 1 # decrease screen brightness
+#bindsym XF86MonBrightnessUp exec light -A 1 # increase screen brightness
+#bindsym XF86MonBrightnessDown exec light -U 1 # decrease screen brightness
 
 bindsym $mod+b exec google-chrome
-bindsym $mod+p exec evince
+bindsym $mod+p exec atril
 bindsym $mod+n exec firefox
 
 default_border pixel 1

@@ -9,7 +9,6 @@ vim.g.mapleader = " "
 keymap("n", "<C-j>", "<C-w>w", opts)
 keymap("n", "<C-h>", ":bprev<cr>", opts)
 keymap("n", "<C-l>", ":bnext<cr>", opts)
-keymap("n", "<C-r>", "%s//gI<left><left><left>", opts)
 keymap("t", "<Esc", "<C-\\><C-n>", opts)
 
 keymap("v", "J", ":m '>+1<cr>gv=gv", opts)
@@ -24,4 +23,3 @@ keymap("n", "<leader>pv", ":Ex <cr>", opts)
 keymap("n", "<C-c>", "<Esc>", opts)
 
 keymap("i", "}e", "<C-y>,", {noremap = false, silent = true})
-

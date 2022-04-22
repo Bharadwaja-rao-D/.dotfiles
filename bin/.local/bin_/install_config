@@ -8,7 +8,7 @@ curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
 sudo apt-get install -y nodejs
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-sudo apt install i3 nitrogen compton stow
+sudo apt install i3 stow
 echo "enter github username"
 read name
 echo "enter github email"
@@ -28,8 +28,8 @@ echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.profile
 # first move the ssh folder into this computer
 echo "cloning from $name repo"
 git clone git@github.com:$name/.dotfiles.git
-# cd .dotfiles && stow ** && cd ~
-# echo "got all .dotfiles"
+cd .dotfiles && stow ** && cd ~
+echo "got all .dotfiles"
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 sudo snap install spotify

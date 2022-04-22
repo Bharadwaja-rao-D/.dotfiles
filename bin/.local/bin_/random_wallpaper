@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# path to the wallpaper directory
+rep="$HOME/Pictures/wallpapers"
+
+# list of files (assumed images)
+images=("${rep}/"*)
+
+# Random position
+choice=$((${RANDOM} % ${#images[@]}))
+
+# Set the image as wallpaper (note quotes are expected)
+dconf write /org/mate/desktop/background/picture-filename "'${images[${choice}]}'"

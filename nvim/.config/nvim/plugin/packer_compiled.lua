@@ -104,11 +104,6 @@ _G.packer_plugins = {
     path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
     url = "https://github.com/onsails/lspkind-nvim"
   },
-  neoformat = {
-    loaded = true,
-    path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/neoformat",
-    url = "https://github.com/sbdchd/neoformat"
-  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -138,6 +133,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
+  },
+  ["rust.vim"] = {
+    loaded = true,
+    path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/rust.vim",
+    url = "https://github.com/rust-lang/rust.vim"
   },
   ["telescope.nvim"] = {
     loaded = true,

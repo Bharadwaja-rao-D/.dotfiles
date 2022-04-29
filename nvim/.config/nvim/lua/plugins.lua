@@ -25,7 +25,7 @@ return require('packer').startup(function()
 		run = ':TSUpdate'
 	}
 	use 'tpope/vim-fugitive'
-	use 'sbdchd/neoformat'
+	use 'rust-lang/rust.vim'
 
 	-- for debugging: Not using now but will be useful
 	use 'puremourning/vimspector'

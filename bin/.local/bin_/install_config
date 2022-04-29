@@ -1,11 +1,11 @@
 #! /bin/bash
 
-sudo apt instal zsh
-sudo apt install build-essential git curl wget
+sudo apt install build-essential git curl wget zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-sudo apt install i3 stow compton nitrogen blueman
+wget https://github.com/neovim/neovim/releases/download/nightly/nvim-linux64.deb
+sudo apt install i3 stow compton nitrogen blueman xclip
 echo "enter github username"
 read name
 echo "enter github email"
@@ -13,7 +13,7 @@ read email
 git config --global user.name $name
 git config --global user.email $email
 sudo apt install clangd pip
-pip3 install pyright pynvim
+pip3 install pynvim
 echo "installed clangd and pyright and pynvim"
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 mkdir -p ~/.local/bin
@@ -28,3 +28,13 @@ echo "got all .dotfiles"
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 sudo snap install spotify
+
+sudo apt install apt-transport-https curl
+
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+
+sudo apt update
+
+sudo apt install brave-browser

@@ -5,7 +5,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 wget https://github.com/neovim/neovim/releases/download/nightly/nvim-linux64.deb
-sudo apt install i3 stow compton nitrogen blueman xclip
+sudo apt install i3 stow xclip
 echo "enter github username"
 read name
 echo "enter github email"
@@ -30,11 +30,9 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 sudo snap install spotify
 
 sudo apt install apt-transport-https curl
-
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
-
 sudo apt update
-
 sudo apt install brave-browser
+
+cargo install cargo-edit

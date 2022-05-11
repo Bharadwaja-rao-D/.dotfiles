@@ -14,8 +14,8 @@ return require('packer').startup(function()
 	use 'hrsh7th/cmp-nvim-lsp'
 	use 'hrsh7th/cmp-buffer'
 	use 'hrsh7th/nvim-cmp'
-	use 'L3MON4D3/LuaSnip'
 	use 'saadparwaiz1/cmp_luasnip'
+	use 'L3MON4D3/LuaSnip'
 	use 'onsails/lspkind-nvim'
 	use 'mattn/emmet-vim'
 
@@ -29,4 +29,5 @@ return require('packer').startup(function()
 
 	-- for debugging: Not using now but will be useful
 	use 'puremourning/vimspector'
+
   end)

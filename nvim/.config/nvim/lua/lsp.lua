@@ -5,7 +5,10 @@
     snippet = {
       -- REQUIRED - you must specify a snippet engine
       expand = function(args)
-        require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
+        --vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
+         require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
+        -- require('snippy').expand_snippet(args.body) -- For `snippy` users.
+        -- vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
       end,
     },
     window = {
@@ -21,7 +24,10 @@
     }),
     sources = cmp.config.sources({
       { name = 'nvim_lsp' },
-      { name = 'luasnip' }, -- For luasnip users.
+      --{ name = 'vsnip' }, -- For vsnip users.
+       { name = 'luasnip' }, -- For luasnip users.
+      -- { name = 'ultisnips' }, -- For ultisnips users.
+      -- { name = 'snippy' }, -- For snippy users.
     }, {
       { name = 'buffer' },
     })
@@ -57,26 +63,14 @@
   -- Setup lspconfig.
   local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
   -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-  require('lspconfig')['clangd'].setup {
+  require('lspconfig')['ccls'].setup {
     capabilities = capabilities
   }
-
   require('lspconfig')['rust_analyzer'].setup {
     capabilities = capabilities
   }
-
   require('lspconfig')['tsserver'].setup {
-	  on_attach = custom_attach, root_dir = vim.loop.cmd
-  }
+    capabilities = capabilities,
+	on_attach = custom_attach, root_dir = vim.loop.cwd
 
-vim.cmd"nnoremap gd :lua vim.lsp.buf.definition()<CR>"
-vim.cmd"nnoremap K :lua vim.lsp.buf.hover()<CR>"
-vim.cmd"nnoremap <leader>vws :lua vim.lsp.buf.workspace_symbol()<CR>"
-vim.cmd"nnoremap <leader>vd :lua vim.diagnostic.open_float()<CR>"
-vim.cmd"nnoremap [d :lua vim.lsp.diagnostic.goto_next()<CR>"
-vim.cmd"nnoremap ]d :lua vim.lsp.diagnostic.goto_prev()<CR>"
-vim.cmd"nnoremap <leader>vca :lua vim.lsp.buf.code_action()<CR>"
-vim.cmd"nnoremap <leader>vrr :lua vim.lsp.buf.references()<CR>"
-vim.cmd"nnoremap <leader>vrn :lua vim.lsp.buf.rename()<CR>"
---vim.cmd"nnoremap <C-h> :lua vim.lsp.buf.signature_help()<CR>"
-vim.cmd"let g:rustfmt_autosave = 1"
+  }

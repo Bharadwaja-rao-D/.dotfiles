@@ -15,7 +15,7 @@
  keymap("n", "<leader>fb", "<cmd>Telescope buffers<cr>", opts)
 
 require'nvim-treesitter.configs'.setup{
-	ensure_installed = {"c", "cpp", "rust", "go", "comment"},
+	ensure_installed = {"c", "cpp", "rust", "javascript", "comment", "html", "css"},
 	sync_install = false,
 
 	highlight = {

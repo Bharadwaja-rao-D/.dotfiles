@@ -1,6 +1,7 @@
 require"options"
 require"plugins"
 require"keymaps"
-require"lsp"
+require"lsp_new"
 -- require "telescope-config"
 require"other"
+vim.cmd "source ~/.config/nvim/lua/autocmds.vim"

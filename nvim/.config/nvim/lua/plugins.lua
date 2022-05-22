@@ -27,7 +27,5 @@ return require('packer').startup(function()
 	use 'tpope/vim-fugitive'
 	use 'rust-lang/rust.vim'
 
-	-- for debugging: Not using now but will be useful
-	use 'puremourning/vimspector'
 
   end)

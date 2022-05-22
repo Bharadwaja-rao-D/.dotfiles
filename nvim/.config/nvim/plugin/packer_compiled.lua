@@ -158,11 +158,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
-  },
-  vimspector = {
-    loaded = true,
-    path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/vimspector",
-    url = "https://github.com/puremourning/vimspector"
   }
 }
 

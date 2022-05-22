@@ -104,4 +104,4 @@ source $ZSH/oh-my-zsh.sh
 
 source ~/.bash_aliases
 
-bindkey -s ^t "tmux-session\n"
+bindkey -s ^t "tmux-sessionizer\n"

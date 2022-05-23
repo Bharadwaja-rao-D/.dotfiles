@@ -93,6 +93,7 @@ require('lspconfig')['ccls'].setup {
 require('lspconfig')['rust_analyzer'].setup {
 	capabilities = capabilities
 }
+require'lspconfig'.emmet_ls.setup{}
 require('lspconfig')['tsserver'].setup {
 	capabilities = capabilities,
 	on_attach = custom_attach, root_dir = vim.loop.cwd

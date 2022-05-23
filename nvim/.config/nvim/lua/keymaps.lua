@@ -22,4 +22,3 @@ keymap("n", "<leader>pv", ":Ex <cr>", opts)
 
 keymap("n", "<C-c>", "<Esc>", opts)
 
-keymap("i", "}e", "<C-y>,", {noremap = false, silent = true})

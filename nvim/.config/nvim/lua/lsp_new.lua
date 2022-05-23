@@ -100,3 +100,13 @@ require('lspconfig')['tsserver'].setup {
 
 }
 
+vim.cmd"nnoremap gd :lua vim.lsp.buf.definition()<CR>"
+vim.cmd"nnoremap K :lua vim.lsp.buf.hover()<CR>"
+vim.cmd"nnoremap <leader>vws :lua vim.lsp.buf.workspace_symbol()<CR>"
+vim.cmd"nnoremap <leader>vd :lua vim.diagnostic.open_float()<CR>"
+vim.cmd"nnoremap [d :lua vim.lsp.diagnostic.goto_next()<CR>"
+vim.cmd"nnoremap ]d :lua vim.lsp.diagnostic.goto_prev()<CR>"
+vim.cmd"nnoremap <leader>vca :lua vim.lsp.buf.code_action()<CR>"
+vim.cmd"nnoremap <leader>vrr :lua vim.lsp.buf.references()<CR>"
+vim.cmd"nnoremap <leader>vrn :lua vim.lsp.buf.rename()<CR>"
+vim.cmd"inoremap <C-h> <cmd>lua vim.lsp.buf.signature_help()<CR>"

@@ -3,6 +3,7 @@ set mouse=a
 let g:gruvbox_contrast_dark = 'hard'
 colorscheme gruvbox
 let g:netrw_banner = 0
+hi SignColumn guibg=none
 
 augroup for_cp
     autocmd!

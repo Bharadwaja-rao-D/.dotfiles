@@ -139,11 +139,6 @@ _G.packer_plugins = {
     path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["vim-autoclose"] = {
-    loaded = true,
-    path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/vim-autoclose",
-    url = "https://github.com/Townk/vim-autoclose"
-  },
   ["vim-commentary"] = {
     loaded = true,
     path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/vim-commentary",

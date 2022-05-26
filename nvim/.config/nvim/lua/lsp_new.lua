@@ -34,7 +34,7 @@ cmp.setup({
 
 	formatting = {
 		format = function(entry, vim_item)
-			vim_item.kind = lspkind.presets.default[vim_item.kind]
+			-- vim_item.kind = lspkind.presets.default[vim_item.kind]
 			local menu = source_mapping[entry.source.name]
 			-- if entry.source.name == "cmp_tabnine" then
 			-- 	if entry.completion_item.data ~= nil and entry.completion_item.data.detail ~= nil then
@@ -96,6 +96,7 @@ require('lspconfig')['rust_analyzer'].setup {
 require'lspconfig'.emmet_ls.setup{}
 require('lspconfig')['tsserver'].setup {
 	capabilities = capabilities,
+	cmd = {'typescript-language-server', '--stdio'},
 	on_attach = custom_attach, root_dir = vim.loop.cwd
 
 }
@@ -110,3 +111,5 @@ vim.cmd"nnoremap <leader>vca :lua vim.lsp.buf.code_action()<CR>"
 vim.cmd"nnoremap <leader>vrr :lua vim.lsp.buf.references()<CR>"
 vim.cmd"nnoremap <leader>vrn :lua vim.lsp.buf.rename()<CR>"
 vim.cmd"inoremap <C-h> <cmd>lua vim.lsp.buf.signature_help()<CR>"
+
+vim.cmd "let g:rustfmt_autosave = 1"

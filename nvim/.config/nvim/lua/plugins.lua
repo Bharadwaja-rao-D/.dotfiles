@@ -9,6 +9,8 @@ return require('packer').startup(function()
 	use 'Townk/vim-autoclose'
 	use 'tpope/vim-commentary'
 
+	use 'ThePrimeagen/harpoon'
+
 	--lsp related
 	use 'neovim/nvim-lspconfig'
 	use 'hrsh7th/cmp-nvim-lsp'
@@ -23,8 +25,8 @@ return require('packer').startup(function()
 		'nvim-treesitter/nvim-treesitter',
 		run = ':TSUpdate'
 	}
-	use 'tpope/vim-fugitive'
-	use 'rust-lang/rust.vim'
 
+	use 'tpope/vim-fugitive' -- for git
+	use 'rust-lang/rust.vim'
 
   end)

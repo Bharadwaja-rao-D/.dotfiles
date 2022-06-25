@@ -22,3 +22,6 @@ keymap("n", "<leader>pv", ":Ex <cr>", opts)
 
 keymap("n", "<C-c>", "<Esc>", opts)
 
+keymap("n", "gp", "<cmd> Git push <CR>", opts)
+keymap("n", "<leader>u", "<cmd> UndotreeToggle<CR>", opts)
+

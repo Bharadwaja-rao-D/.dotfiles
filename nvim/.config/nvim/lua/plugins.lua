@@ -1,15 +1,17 @@
 return require('packer').startup(function()
 -- Packer can manage itself
-  	use 'wbthomason/packer.nvim'
+	use 'wbthomason/packer.nvim'
 	use 'gruvbox-community/gruvbox'
+	use 'folke/tokyonight.nvim'
 
 	--basic utilites
 	use 'nvim-lua/plenary.nvim'
 	use 'nvim-lua/popup.nvim'
-	use 'Townk/vim-autoclose'
+	--use 'Townk/vim-autoclose'
 	use 'tpope/vim-commentary'
 
 	use 'ThePrimeagen/harpoon'
+	use 'mbbill/undotree'
 
 	--lsp related
 	use 'neovim/nvim-lspconfig'

@@ -84,11 +84,6 @@ _G.packer_plugins = {
     path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  ["cmp-tabnine"] = {
-    loaded = true,
-    path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/cmp-tabnine",
-    url = "https://github.com/tzachar/cmp-tabnine"
-  },
   cmp_luasnip = {
     loaded = true,
     path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
@@ -108,11 +103,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
     url = "https://github.com/onsails/lspkind-nvim"
-  },
-  neogit = {
-    loaded = true,
-    path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/neogit",
-    url = "https://github.com/TimUntersberger/neogit"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -144,6 +134,11 @@ _G.packer_plugins = {
     path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
+  ["rust.vim"] = {
+    loaded = true,
+    path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/rust.vim",
+    url = "https://github.com/rust-lang/rust.vim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -158,6 +153,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
+  },
+  ["vim-commentary"] = {
+    loaded = true,
+    path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/vim-commentary",
+    url = "https://github.com/tpope/vim-commentary"
+  },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/home/bharadwaja/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
   }
 }
 

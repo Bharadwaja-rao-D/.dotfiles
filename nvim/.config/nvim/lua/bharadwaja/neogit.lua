@@ -3,7 +3,7 @@ local nnoremap = require('bharadwaja.keymap').nnoremap
 
 neogit.setup {}
 
-nnoremap("<leader>gs", function()
+nnoremap("<leader>go", function()
     neogit.open({ })
 end);
 

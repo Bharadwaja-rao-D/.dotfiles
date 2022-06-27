@@ -1,4 +1,5 @@
-vim.g.theprimeagen_colorscheme = "tokyonight"
+--vim.g.theprimeagen_colorscheme = "tokyonight"
+vim.g.theprimeagen_colorscheme = "gruvbox"
 
 function ColorMyPencils()
     vim.g.gruvbox_contrast_dark = 'hard'

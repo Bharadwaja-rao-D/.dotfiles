@@ -112,5 +112,9 @@ end
 require('lspconfig').clangd.setup(config())
 require('lspconfig').rust_analyzer.setup(config())
 require('lspconfig').emmet_ls.setup(config())
-require('lspconfig').tsserver.setup(config())
+require('lspconfig').tsserver.setup{
+    config(), 
+    --cmd = {'typescript-language-server', '--stdio'},
+    --on_attach = custom_attach, root_dir = vim.loop.cwd
+}
 

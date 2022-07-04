@@ -39,7 +39,7 @@ nnoremap("Q", "<nop>")
 nnoremap("<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 
 nnoremap("<C-k>", "<cmd>cnext<CR>zz")
-nnoremap("<C-j>", "<cmd>cprev<CR>zz")
+nnoremap("<C-j>", "<C-w>w")
 nnoremap("<leader>k", "<cmd>lnext<CR>zz")
 nnoremap("<leader>j", "<cmd>lprev<CR>zz")
 

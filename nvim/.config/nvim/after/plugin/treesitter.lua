@@ -1,5 +1,5 @@
 require'nvim-treesitter.configs'.setup {
-    ensure_installed = "all",
+    ensure_installed = {"c", "cpp", "rust" , "html", "comment", "javascript"},
     sync_install = false,
 
     highlight = {

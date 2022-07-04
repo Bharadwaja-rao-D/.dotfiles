@@ -114,7 +114,8 @@ require('lspconfig').rust_analyzer.setup(config())
 require('lspconfig').emmet_ls.setup(config())
 require('lspconfig').tsserver.setup{
     config(), 
-    --cmd = {'typescript-language-server', '--stdio'},
-    --on_attach = custom_attach, root_dir = vim.loop.cwd
+    cmd = {'typescript-language-server', '--stdio'},
+    on_attach = custom_attach, root_dir = vim.loop.cwd
 }
 
+vim.cmd "let g:rustfmt_autosave = 1"

@@ -1,6 +1,6 @@
-vim.g.theprimeagen_colorscheme = "onedark"
+--vim.g.theprimeagen_colorscheme = "onedark"
 --vim.g.theprimeagen_colorscheme = "gruvbox"
---vim.g.theprimeagen_colorscheme = "tokyonight"
+vim.g.theprimeagen_colorscheme = "tokyonight"
 
 function ColorMyPencils()
     vim.g.gruvbox_contrast_dark = 'hard'

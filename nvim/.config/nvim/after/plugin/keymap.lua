@@ -73,6 +73,7 @@ end)
 nnoremap("<leader>va", function()
     require('bharadwaja.telescope').anime_selector()
 end)
+
 nnoremap("<leader>gc", function()
     require('bharadwaja.telescope').git_branches()
 end)

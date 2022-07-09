@@ -1,4 +1,4 @@
---vim.g.theprimeagen_colorscheme = "onedark"
+-- vim.g.theprimeagen_colorscheme = "onedark"
 --vim.g.theprimeagen_colorscheme = "gruvbox"
 vim.g.theprimeagen_colorscheme = "tokyonight"
 

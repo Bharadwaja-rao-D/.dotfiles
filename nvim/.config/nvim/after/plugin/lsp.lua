@@ -117,5 +117,16 @@ require('lspconfig').tsserver.setup{
     cmd = {'typescript-language-server', '--stdio'},
     on_attach = custom_attach, root_dir = vim.loop.cwd
 }
+require("lspconfig").gopls.setup(config({
+	cmd = { "gopls", "serve" },
+	settings = {
+		gopls = {
+			analyses = {
+				unusedparams = true,
+			},
+			staticcheck = true,
+		},
+	},
+}))
 
 vim.cmd "let g:rustfmt_autosave = 1"

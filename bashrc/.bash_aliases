@@ -9,4 +9,5 @@ export LANG=en_IN.UTF-8
 # adding new bin
 
 PATH="$HOME/.local/bin_:$PATH"
-
+PATH="$HOME/go/bin:$PATH"
+export GOPATH=$HOME/go

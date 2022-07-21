@@ -1,5 +1,6 @@
 #! /bin/bash
 
+sudo apt update && sudo apt upgrade
 sudo apt install build-essential git curl wget zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
@@ -23,6 +24,7 @@ echo "installed rust and rust-analyzer"
 # first move the ssh folder into this computer
 echo "cloning from $name repo"
 git clone git@github.com:$name/.dotfiles.git
+rm ~/.zshrc
 cd .dotfiles && stow ** && cd ~
 echo "got all .dotfiles"
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
@@ -35,7 +37,3 @@ echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=
 sudo apt update
 sudo apt install brave-browser
 
-cargo install cargo-edit
-timedatectl set-local-rtc 1
-xclip
-wget https://www.dafontfree.io/download/consolas/?wpdmdl=71932&refresh=626ed17f9717c1651429759&ind=1612712158037&filename=Consolas-Font.zip

@@ -39,7 +39,9 @@ end
 
 
 local function set_background(content)
-	vim.fn.system("dconf write /org/mate/desktop/background/picture-filename \"'" .. content .. "'\"")
+    local wallpaper = "feh --bg-fill " .. content
+    print(wallpaper)
+	vim.fn.system(wallpaper)
 end
 
 local function select_background(prompt_bufnr, map)

@@ -191,3 +191,4 @@ for_window [class="^.*"] client.focused          #77dd77 #285577 #ffffff #2e9ef4
 exec xinput float 16
 # exec nitrogen --restore
 exec compton
+exec ~/.fehbg

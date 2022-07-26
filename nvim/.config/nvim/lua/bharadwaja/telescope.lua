@@ -40,7 +40,7 @@ end
 
 local function set_background(content)
     local wallpaper = "feh --bg-fill " .. content
-    print(wallpaper)
+    --print(wallpaper)
 	vim.fn.system(wallpaper)
 end
 

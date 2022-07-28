@@ -1,5 +1,5 @@
 require'nvim-treesitter.configs'.setup {
-    ensure_installed = {"c", "cpp", "go", "rust" , "html", "comment", "javascript"},
+    ensure_installed = {"markdown","c", "cpp", "go", "rust" , "html", "comment", "javascript"},
     sync_install = false,
 
     highlight = {

@@ -1,14 +1,10 @@
--- vim.g.theprimeagen_colorscheme = "onedark"
---vim.g.theprimeagen_colorscheme = "gruvbox"
 vim.g.theprimeagen_colorscheme = "tokyonight"
 
 function ColorMyPencils()
     vim.g.gruvbox_contrast_dark = 'hard'
-    vim.g.gruvbox_invert_selection = '0'
-
     vim.g.tokyonight_transparent_sidebar = true
     vim.g.tokyonight_transparent = true
-
+    vim.g.gruvbox_invert_selection = '0'
     vim.opt.background = "dark"
 
     vim.cmd("colorscheme " .. vim.g.theprimeagen_colorscheme)
@@ -44,3 +40,5 @@ function ColorMyPencils()
 
 end
 ColorMyPencils()
+
+

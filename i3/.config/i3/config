@@ -180,7 +180,7 @@ bar {
         status_command i3status
 }
 
-bindsym $mod+b exec brave-browser
+bindsym $mod+b exec google-chrome
 bindsym $mod+n exec firefox
 
 for_window [class="^.*"] border pixel 2

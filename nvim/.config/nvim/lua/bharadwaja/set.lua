@@ -43,3 +43,5 @@ vim.opt.colorcolumn = "80"
 
 vim.g.mapleader = " "
 
+vim.cmd"set mouse= "
+

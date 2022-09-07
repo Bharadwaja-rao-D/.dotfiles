@@ -9,7 +9,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod4
+set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -182,13 +182,14 @@ bar {
 
 bindsym $mod+b exec google-chrome
 bindsym $mod+n exec firefox
+bindsym $mod+Shift+f exec nautilus
 
 for_window [class="^.*"] border pixel 2
                           # class                 border  backgr. text    indicator child_border
 for_window [class="^.*"] client.focused          #77dd77 #285577 #ffffff #2e9ef4   #285577
 
 #To turn off my internal keyboard
-exec xinput float 16
+exec xinput float 14
 # exec nitrogen --restore
 exec picom
 exec ~/.fehbg

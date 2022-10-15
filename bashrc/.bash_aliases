@@ -1,6 +1,6 @@
 alias vim="nvim"
 alias open="xdg-open"
-alias connectbluetooth="bluetoothctl connect 00:00:AB:D1:D3:3D"
+alias connectbluetooth="bluetoothctl connect 00:00:AB:CD:30:EB"
 alias disconnectbluetooth="bluetoothctl disconnect"
 alias jpt="cd ~/iith/FOML && source bin/activate && cd src/ && jupyter-notebook"
 

@@ -3,7 +3,7 @@
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    selected=$(find   ~/iith ~/personal -mindepth 1 -maxdepth 2 -type d | fzf)
+    selected=$(find   ~/mfl ~/personal -mindepth 1 -maxdepth 2 -type d | fzf)
 fi
 
 if [[ -z $selected ]]; then

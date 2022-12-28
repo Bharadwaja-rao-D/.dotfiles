@@ -189,7 +189,7 @@ for_window [class="^.*"] border pixel 2
 for_window [class="^.*"] client.focused          #77dd77 #285577 #ffffff #2e9ef4   #285577
 
 #To turn off my internal keyboard
-exec xinput float 14
+exec xinput float 12
 # exec nitrogen --restore
 exec picom
 exec ~/.fehbg

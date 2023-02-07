@@ -5,6 +5,8 @@ lsp.ensure_installed({
   'tsserver',
   'rust_analyzer',
   'omnisharp',
+  'clangd',
+  'pyright',
 })
 
 lsp.set_preferences({

@@ -16,9 +16,10 @@ order += "wireless _first_"
 order += "battery all"
 order += "load"
 order += "tztime local"
+order += "volume master0"
 
 wireless _first_ {
-        format_up = "(%essid)" 
+        format_up = "(%essid)"
         format_down = "W: down"
 }
 
@@ -27,11 +28,19 @@ battery all {
 }
 
 tztime local {
-        format = "%Y-%m-%d %H:%M"
+        format = "%d-%m-%Y %H:%M"
 }
 
 load {
         format = "%1min"
+}
+
+volume master0 {
+    format = "♪: %volume"
+    format_muted = "♪: muted (%volume)"
+    device = hw:0
+    mixer = "Master"
+    mixer_idx = 0
 }
 
 disk "/" {

@@ -4,9 +4,9 @@ lsp.preset("recommended")
 lsp.ensure_installed({
   'tsserver',
   'rust_analyzer',
-  'omnisharp',
   'clangd',
   'pyright',
+  'jdtls',
 })
 
 lsp.set_preferences({

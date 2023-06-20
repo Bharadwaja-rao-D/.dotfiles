@@ -45,6 +45,6 @@ return require('packer').startup(function(use)
           { 'rafamadriz/friendly-snippets' },
       }
   }
-  use ('mattn/emmet-vim')
+  use ('rust-lang/rust.vim')
 
 end)

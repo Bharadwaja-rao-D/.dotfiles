@@ -25,7 +25,7 @@ function ColorMyPencils(color)
 
 end
 
-ColorMyPencils()
+-- ColorMyPencils()
 
--- OneNordColor()
+OneNordColor()
 

@@ -7,6 +7,7 @@ lsp.ensure_installed({
   'clangd',
   'pyright',
   'jdtls',
+  'gopls',
 })
 
 lsp.set_preferences({
@@ -40,3 +41,7 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 lsp.setup()
+
+vim.g.rustfmt_autosave = 1
+vim.g.rustfmt_emit_files = 1
+vim.g.rustfmt_fail_silently = 0
